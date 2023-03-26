@@ -7,7 +7,7 @@ const _ = require("lodash");
 
 const app = express();
 
-mongoose.connect("mongodb+srv://piyush-verma:<password>@cluster0.1cfwf1e.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb://localhost:27017/todolist");
 
 const itemsSchema = {
     name: String,
